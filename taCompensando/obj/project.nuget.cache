@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "6VOd/teAaHIhd/57FADRL2mPLQ8csUurbLnWEsbwoVNHz7OYf/HhU+tOLt8V9H8CuWisq7VrNwVF9AYjXkHakw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Aluno\\source\\repos\\tacompensando\\taCompensando\\taCompensando.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Aluno\\.nuget\\packages\\microsoft.net.compilers\\3.9.0\\microsoft.net.compilers.3.9.0.nupkg.sha512"
+  ],
+  "logs": []
+}

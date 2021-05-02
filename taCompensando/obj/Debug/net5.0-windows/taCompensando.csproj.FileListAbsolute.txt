@@ -1,0 +1,16 @@
+C:\Users\Aluno\source\repos\tacompensando\taCompensando\bin\Debug\net5.0-windows\taCompensando.exe
+C:\Users\Aluno\source\repos\tacompensando\taCompensando\bin\Debug\net5.0-windows\taCompensando.deps.json
+C:\Users\Aluno\source\repos\tacompensando\taCompensando\bin\Debug\net5.0-windows\taCompensando.runtimeconfig.json
+C:\Users\Aluno\source\repos\tacompensando\taCompensando\bin\Debug\net5.0-windows\taCompensando.runtimeconfig.dev.json
+C:\Users\Aluno\source\repos\tacompensando\taCompensando\bin\Debug\net5.0-windows\taCompensando.dll
+C:\Users\Aluno\source\repos\tacompensando\taCompensando\bin\Debug\net5.0-windows\ref\taCompensando.dll
+C:\Users\Aluno\source\repos\tacompensando\taCompensando\bin\Debug\net5.0-windows\taCompensando.pdb
+C:\Users\Aluno\source\repos\tacompensando\taCompensando\obj\Debug\net5.0-windows\taCompensando.csprojAssemblyReference.cache
+C:\Users\Aluno\source\repos\tacompensando\taCompensando\obj\Debug\net5.0-windows\taCompensando.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aluno\source\repos\tacompensando\taCompensando\obj\Debug\net5.0-windows\taCompensando.AssemblyInfoInputs.cache
+C:\Users\Aluno\source\repos\tacompensando\taCompensando\obj\Debug\net5.0-windows\taCompensando.AssemblyInfo.cs
+C:\Users\Aluno\source\repos\tacompensando\taCompensando\obj\Debug\net5.0-windows\taCompensando.csproj.CoreCompileInputs.cache
+C:\Users\Aluno\source\repos\tacompensando\taCompensando\obj\Debug\net5.0-windows\taCompensando.dll
+C:\Users\Aluno\source\repos\tacompensando\taCompensando\obj\Debug\net5.0-windows\ref\taCompensando.dll
+C:\Users\Aluno\source\repos\tacompensando\taCompensando\obj\Debug\net5.0-windows\taCompensando.pdb
+C:\Users\Aluno\source\repos\tacompensando\taCompensando\obj\Debug\net5.0-windows\taCompensando.genruntimeconfig.cache
