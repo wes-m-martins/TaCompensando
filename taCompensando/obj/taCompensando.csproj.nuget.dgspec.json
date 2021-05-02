@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Aluno\\source\\repos\\tacompensando\\taCompensando\\taCompensando.csproj": {}
+    "C:\\Users\\Aluno\\source\\repos\\taCompensando\\taCompensando\\taCompensando.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Aluno\\source\\repos\\tacompensando\\taCompensando\\taCompensando.csproj": {
+    "C:\\Users\\Aluno\\source\\repos\\taCompensando\\taCompensando\\taCompensando.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Aluno\\source\\repos\\tacompensando\\taCompensando\\taCompensando.csproj",
+        "projectUniqueName": "C:\\Users\\Aluno\\source\\repos\\taCompensando\\taCompensando\\taCompensando.csproj",
         "projectName": "taCompensando",
-        "projectPath": "C:\\Users\\Aluno\\source\\repos\\tacompensando\\taCompensando\\taCompensando.csproj",
+        "projectPath": "C:\\Users\\Aluno\\source\\repos\\taCompensando\\taCompensando\\taCompensando.csproj",
         "packagesPath": "C:\\Users\\Aluno\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Aluno\\source\\repos\\tacompensando\\taCompensando\\obj\\",
+        "outputPath": "C:\\Users\\Aluno\\source\\repos\\taCompensando\\taCompensando\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Aluno\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -16,5 +16,34 @@ namespace taCompensando
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            double a = double.Parse(txtAlcool.Text);
+            double g = double.Parse(txtGasolina.Text);
+
+            double i = Simulador.Indicar(a, g);
+
+            if (i > 0.7)
+            {
+                lblGasolina.Visible = true;
+                lblGasolina.Focus();
+            }
+            else if (i<0.7)
+            {
+                lblAlcool.Visible = true;
+                lblAlcool.Focus();
+            }
+        }
+
+        private void lblGasolina_Leave(object sender, EventArgs e)
+        {
+            lblGasolina.Visible = false;
+        }
+
+        private void lblAlcool_Leave(object sender, EventArgs e)
+        {
+            lblAlcool.Visible = false;
+        }
     }
 }

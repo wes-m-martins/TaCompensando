@@ -14,3 +14,5 @@ C:\Users\Aluno\source\repos\tacompensando\taCompensando\obj\Debug\net5.0-windows
 C:\Users\Aluno\source\repos\tacompensando\taCompensando\obj\Debug\net5.0-windows\ref\taCompensando.dll
 C:\Users\Aluno\source\repos\tacompensando\taCompensando\obj\Debug\net5.0-windows\taCompensando.pdb
 C:\Users\Aluno\source\repos\tacompensando\taCompensando\obj\Debug\net5.0-windows\taCompensando.genruntimeconfig.cache
+C:\Users\Aluno\source\repos\tacompensando\taCompensando\obj\Debug\net5.0-windows\taCompensando.frmPrincipal.resources
+C:\Users\Aluno\source\repos\tacompensando\taCompensando\obj\Debug\net5.0-windows\taCompensando.csproj.GenerateResource.cache
