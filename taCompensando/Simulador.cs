@@ -17,5 +17,7 @@ namespace taCompensando
         {
             return km * l;
         }
+
+
     }
 }

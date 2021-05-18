@@ -24,18 +24,19 @@ namespace taCompensando
 
             double i = Simulador.Indicar(a, g);
 
-            if (i > 0.7)
-            {
-                lblGasolina.Visible = true;
-                lblGasolina.Focus();
-            }
-            else if (i<0.7)
-            {
-                lblAlcool.Visible = true;
-                lblAlcool.Focus();
-            }
+            if (rdoCombustivel.Checked ==true)
+                if (i > 0.7)
+                {
+                    lblGasolina.Visible = true;
+                    lblGasolina.Focus();
+                }
+                else if (i<0.7)
+                {
+                    lblAlcool.Visible = true;
+                    lblAlcool.Focus();
+                }
         }
-
+            
         private void lblGasolina_Leave(object sender, EventArgs e)
         {
             lblGasolina.Visible = false;
@@ -44,6 +45,11 @@ namespace taCompensando
         private void lblAlcool_Leave(object sender, EventArgs e)
         {
             lblAlcool.Visible = false;
+        }
+
+        private void tabPage1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

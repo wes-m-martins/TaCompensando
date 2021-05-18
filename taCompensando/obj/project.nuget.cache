@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wJbnw5R+mQxYPqK+2w0RifH90mnECC42gFPKe8iWax2at3oNiUR77jnwKsM+Z2R6ux6lLAcVFCM/TT1AoJ48Ag==",
+  "dgSpecHash": "bRLAbszEUT5+4vT3Rw1a5lw55ymvTn3NyLBu8A3vb787ugdKlMB2z7BjoQOf7MEoyxLKy4Vv/f0vbdTj2GWCqQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Aluno\\source\\repos\\taCompensando\\taCompensando\\taCompensando.csproj",
+  "projectFilePath": "C:\\Users\\Aluno\\source\\repos\\tacompensando\\taCompensando\\taCompensando.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Aluno\\.nuget\\packages\\microsoft.net.compilers\\3.9.0\\microsoft.net.compilers.3.9.0.nupkg.sha512"
   ],
