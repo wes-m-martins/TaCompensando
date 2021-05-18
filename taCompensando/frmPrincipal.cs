@@ -19,22 +19,75 @@ namespace taCompensando
 
         private void button1_Click(object sender, EventArgs e)
         {
-            double a = double.Parse(txtAlcool.Text);
-            double g = double.Parse(txtGasolina.Text);
+            errorProvider.Clear();
 
-            double i = Simulador.Indicar(a, g);
+            bool erros = false;
 
-            if (rdoCombustivel.Checked ==true)
+            if (txtAlcool.Text.Trim() == "")
+            {
+                errorProvider.SetError(txtAlcool, "Campo obrigatório");
+                erros = true;
+            }
+            if (txtGasolina.Text.Trim() == "")
+            {
+                errorProvider.SetError(txtGasolina, "Campo obrigatório");
+                erros = true;
+            }
+            if (txtConsAlc.Text.Trim() == "")
+            {
+                errorProvider.SetError(txtConsAlc, "Campo obrigatório");
+                erros = true;
+            }
+            if (txtConsGas.Text.Trim() == "")
+            {
+                errorProvider.SetError(txtConsGas, "Campo obrigatório");
+                erros = true;
+            }
+            if (txtVlrAbast.Text.Trim() == "")
+            {
+                errorProvider.SetError(txtVlrAbast, "Campo obrigatório");
+                erros = true;
+            }
+
+
+
+            if (erros == false)
+            {
+                double a = double.Parse(txtAlcool.Text);
+                double g = double.Parse(txtGasolina.Text);
+                double kAlc = double.Parse(txtConsAlc.Text);
+                double kGas = double.Parse(txtConsGas.Text);
+
+                double vlr = double.Parse(txtVlrAbast.Text);
+                double i = 0;
+
+                if (rdoCombustivel.Checked == true)
+                    i = Simulador.Indicar(a, g);
                 if (i > 0.7)
                 {
                     lblGasolina.Visible = true;
                     lblGasolina.Focus();
                 }
-                else if (i<0.7)
+                else if (i < 0.7)
                 {
                     lblAlcool.Visible = true;
                     lblAlcool.Focus();
                 }
+                i = 0;
+                if (rdoConsumo.Checked == true)
+                    i = Simulador.Calcular(kAlc, a , vlr) - Simulador.Calcular(kGas,g,vlr);
+                if (i < 0)
+                {
+                    lblGasolina.Visible = true;
+                    lblGasolina.Focus();
+                }
+                else if (i > 0)
+                {
+                    lblAlcool.Visible = true;
+                    lblAlcool.Focus();
+                }
+                i = 0;
+            }
         }
             
         private void lblGasolina_Leave(object sender, EventArgs e)
@@ -48,6 +101,11 @@ namespace taCompensando
         }
 
         private void tabPage1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void frmPrincipal_Load(object sender, EventArgs e)
         {
 
         }

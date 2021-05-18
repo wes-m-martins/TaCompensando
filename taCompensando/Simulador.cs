@@ -13,9 +13,11 @@ namespace taCompensando
             return a / g;
         }
 
-        public static double Calcular(double km, double l)
+        public static double Calcular(double km, double p, double vlr)
         {
-            return km * l;
+            
+            
+            return vlr / p * km ;
         }
 
 

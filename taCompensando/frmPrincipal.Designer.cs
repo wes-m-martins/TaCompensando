@@ -29,7 +29,16 @@ namespace taCompensando
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtVlrAbast = new System.Windows.Forms.TextBox();
+            this.rdoConsumo = new System.Windows.Forms.RadioButton();
+            this.rdoCombustivel = new System.Windows.Forms.RadioButton();
+            this.txtConsGas = new System.Windows.Forms.TextBox();
+            this.txtConsAlc = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.lblGasolina = new System.Windows.Forms.Label();
             this.lblAlcool = new System.Windows.Forms.Label();
             this.txtGasolina = new System.Windows.Forms.TextBox();
@@ -39,28 +48,19 @@ namespace taCompensando
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txtConsAlc = new System.Windows.Forms.TextBox();
-            this.tctConsGas = new System.Windows.Forms.TextBox();
-            this.rdoCombustivel = new System.Windows.Forms.RadioButton();
-            this.rdoConsumo = new System.Windows.Forms.RadioButton();
+            this.errorProvider = new System.Windows.Forms.ErrorProvider(this.components);
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.tabControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel1.Controls.Add(this.label6);
+            this.panel1.Controls.Add(this.txtVlrAbast);
             this.panel1.Controls.Add(this.rdoConsumo);
             this.panel1.Controls.Add(this.rdoCombustivel);
-            this.panel1.Controls.Add(this.tctConsGas);
+            this.panel1.Controls.Add(this.txtConsGas);
             this.panel1.Controls.Add(this.txtConsAlc);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label4);
@@ -78,10 +78,80 @@ namespace taCompensando
             this.panel1.Size = new System.Drawing.Size(431, 235);
             this.panel1.TabIndex = 0;
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(208, 13);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(89, 15);
+            this.label6.TabIndex = 16;
+            this.label6.Text = "Quanto vai R$?:";
+            // 
+            // txtVlrAbast
+            // 
+            this.txtVlrAbast.Location = new System.Drawing.Point(315, 10);
+            this.txtVlrAbast.Name = "txtVlrAbast";
+            this.txtVlrAbast.Size = new System.Drawing.Size(62, 23);
+            this.txtVlrAbast.TabIndex = 15;
+            // 
+            // rdoConsumo
+            // 
+            this.rdoConsumo.AutoSize = true;
+            this.rdoConsumo.Location = new System.Drawing.Point(208, 115);
+            this.rdoConsumo.Name = "rdoConsumo";
+            this.rdoConsumo.Size = new System.Drawing.Size(144, 19);
+            this.rdoConsumo.TabIndex = 14;
+            this.rdoConsumo.TabStop = true;
+            this.rdoConsumo.Text = "Calcular por Consumo";
+            this.rdoConsumo.UseVisualStyleBackColor = true;
+            // 
+            // rdoCombustivel
+            // 
+            this.rdoCombustivel.AutoSize = true;
+            this.rdoCombustivel.Location = new System.Drawing.Point(27, 115);
+            this.rdoCombustivel.Name = "rdoCombustivel";
+            this.rdoCombustivel.Size = new System.Drawing.Size(159, 19);
+            this.rdoCombustivel.TabIndex = 13;
+            this.rdoCombustivel.TabStop = true;
+            this.rdoCombustivel.Text = "Calcular por Combustível";
+            this.rdoCombustivel.UseVisualStyleBackColor = true;
+            // 
+            // txtConsGas
+            // 
+            this.txtConsGas.Location = new System.Drawing.Point(315, 67);
+            this.txtConsGas.Name = "txtConsGas";
+            this.txtConsGas.Size = new System.Drawing.Size(61, 23);
+            this.txtConsGas.TabIndex = 12;
+            // 
+            // txtConsAlc
+            // 
+            this.txtConsAlc.Location = new System.Drawing.Point(315, 39);
+            this.txtConsAlc.Name = "txtConsAlc";
+            this.txtConsAlc.Size = new System.Drawing.Size(62, 23);
+            this.txtConsAlc.TabIndex = 11;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(203, 76);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(110, 15);
+            this.label5.TabIndex = 10;
+            this.label5.Text = "Consumo Gasolina:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(203, 44);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(99, 15);
+            this.label4.TabIndex = 9;
+            this.label4.Text = "Consumo Álcool:";
+            // 
             // lblGasolina
             // 
             this.lblGasolina.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblGasolina.Location = new System.Drawing.Point(116, 174);
+            this.lblGasolina.Location = new System.Drawing.Point(153, 169);
             this.lblGasolina.Name = "lblGasolina";
             this.lblGasolina.Size = new System.Drawing.Size(261, 31);
             this.lblGasolina.TabIndex = 8;
@@ -120,7 +190,7 @@ namespace taCompensando
             // 
             this.txtPosto.Location = new System.Drawing.Point(69, 10);
             this.txtPosto.Name = "txtPosto";
-            this.txtPosto.Size = new System.Drawing.Size(308, 23);
+            this.txtPosto.Size = new System.Drawing.Size(135, 23);
             this.txtPosto.TabIndex = 4;
             // 
             // btnCalcular
@@ -160,122 +230,22 @@ namespace taCompensando
             this.label1.TabIndex = 0;
             this.label1.Text = "Posto:";
             // 
-            // panel2
+            // errorProvider
             // 
-            this.panel2.Controls.Add(this.tabControl1);
-            this.panel2.Location = new System.Drawing.Point(64, 268);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(354, 115);
-            this.panel2.TabIndex = 1;
-            // 
-            // tabControl1
-            // 
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Controls.Add(this.tabPage3);
-            this.tabControl1.Location = new System.Drawing.Point(0, 0);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(354, 100);
-            this.tabControl1.TabIndex = 3;
-            // 
-            // tabPage1
-            // 
-            this.tabPage1.Location = new System.Drawing.Point(4, 24);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(346, 72);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Posto A";
-            this.tabPage1.UseVisualStyleBackColor = true;
-            this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
-            // 
-            // tabPage2
-            // 
-            this.tabPage2.Location = new System.Drawing.Point(4, 24);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(346, 72);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Posto B";
-            this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // tabPage3
-            // 
-            this.tabPage3.Location = new System.Drawing.Point(4, 24);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(346, 72);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Posto C";
-            this.tabPage3.UseVisualStyleBackColor = true;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(203, 44);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(99, 15);
-            this.label4.TabIndex = 9;
-            this.label4.Text = "Consumo Álcool:";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(203, 76);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(110, 15);
-            this.label5.TabIndex = 10;
-            this.label5.Text = "Consumo Gasolina:";
-            // 
-            // txtConsAlc
-            // 
-            this.txtConsAlc.Location = new System.Drawing.Point(315, 39);
-            this.txtConsAlc.Name = "txtConsAlc";
-            this.txtConsAlc.Size = new System.Drawing.Size(62, 23);
-            this.txtConsAlc.TabIndex = 11;
-            // 
-            // tctConsGas
-            // 
-            this.tctConsGas.Location = new System.Drawing.Point(315, 67);
-            this.tctConsGas.Name = "tctConsGas";
-            this.tctConsGas.Size = new System.Drawing.Size(61, 23);
-            this.tctConsGas.TabIndex = 12;
-            // 
-            // rdoCombustivel
-            // 
-            this.rdoCombustivel.AutoSize = true;
-            this.rdoCombustivel.Location = new System.Drawing.Point(27, 115);
-            this.rdoCombustivel.Name = "rdoCombustivel";
-            this.rdoCombustivel.Size = new System.Drawing.Size(159, 19);
-            this.rdoCombustivel.TabIndex = 13;
-            this.rdoCombustivel.TabStop = true;
-            this.rdoCombustivel.Text = "Calcular por Combustível";
-            this.rdoCombustivel.UseVisualStyleBackColor = true;
-            // 
-            // rdoConsumo
-            // 
-            this.rdoConsumo.AutoSize = true;
-            this.rdoConsumo.Location = new System.Drawing.Point(208, 115);
-            this.rdoConsumo.Name = "rdoConsumo";
-            this.rdoConsumo.Size = new System.Drawing.Size(144, 19);
-            this.rdoConsumo.TabIndex = 14;
-            this.rdoConsumo.TabStop = true;
-            this.rdoConsumo.Text = "Calcular por Consumo";
-            this.rdoConsumo.UseVisualStyleBackColor = true;
+            this.errorProvider.ContainerControl = this;
             // 
             // frmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(564, 389);
-            this.Controls.Add(this.panel2);
+            this.ClientSize = new System.Drawing.Size(517, 277);
             this.Controls.Add(this.panel1);
             this.Name = "frmPrincipal";
             this.Text = "Ta Compensando...";
+            this.Load += new System.EventHandler(this.frmPrincipal_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.tabControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -291,17 +261,15 @@ namespace taCompensando
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label lblGasolina;
-        private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.RadioButton rdoConsumo;
         private System.Windows.Forms.RadioButton rdoCombustivel;
-        private System.Windows.Forms.TextBox tctConsGas;
+        private System.Windows.Forms.TextBox txtConsGas;
         private System.Windows.Forms.TextBox txtConsAlc;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox txtVlrAbast;
+        private System.Windows.Forms.ErrorProvider errorProvider;
     }
 }
